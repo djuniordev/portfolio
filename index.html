@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Júnior</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <script defer src="scripts/index.js" type="module"></script>
+  <script defer src="scripts/renderData.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="menu">  
+        <i class="ri-menu-line"></i>
+        <i class="ri-close-line hidden"></i>
+      </div>
+      <a href="#sobre">Portfólio<span>{}</span></a>
+      <div class="toggle">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+          <div class="box"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+  <section id="sobre" class="js-section">
+    <div class="container">
+      <div class="banner">
+        <div class="intro">
+          <div class="title">
+            <h1>Olá! eu sou o</h1>
+            <span>DANIEL JUNIOR</span>
+            <p>Sou desenvolvedor Back-End apaixonado por desenvolvimento e inovação.</p>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/djuniordev"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a href="https://www.linkedin.com/in/djuniordev"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+          </div>
+        </div>
+        <div class="profile">
+          <a href="https://www.linkedin.com/in/djuniordev" target="_blank">
+            <img src="assets/minhafoto.svg" alt="avatar">
+          </a>
+        </div>
+      </div>
+      <div class="about">
+        <h2>Sobre mim</h2>
+        <p>
+            Olá! me chamo Daniel Júnior, mais conhecido pela minha família como Juninho. Atualmente estou aprimorando minhas habilidades em desenvolvimento de API REST usando Python. Fui competidor de robótica durante 3 anos no meu ensino médio no IEMA e no meu segundo ano de competição fui campeão mundial de robótica, que infelizmente aconteceu no Brasil, mas foi muito bom viajar para São Paulo, nunca tinha saído do Maranhão e com essa jornada me apaixonei pela programação, principalmente no back-end, porém fui me aprimorar mesmo em 2023, onde também conheci várias ferramentas low-code para ajudar no front-end.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="js-section">
+    <div class="skills">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="cards"></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="js-section">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="highlights">
+        <h3>Em destaque</h3>
+        <div class="cards-projects"></div>
+      </div>
+    </div>
+  </section>
+  <section id="contacts" class="js-section">
+    <div class="contacts">
+      <div class="container">
+        <h2>Contatos</h2>
+        <div class="icons">
+          <div class="icon">
+            <a href="mailto:danieljunior.me@gmail.com" target="_blank">
+              <div class="box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </a>
+            <a href="mailto:danieljunior.me@gmail.com" target="_blank">
+              <p>E-mail</p>
+            </a>
+            <a href="mailto:danieljunior.me@gmail.com" target="_blank">
+              <p>danieljunior.me@gmail.com</p>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://api.whatsapp.com/send?phone=5598987222769" target="_blank">
+              <div class="box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5598987222769" target="_blank">
+              <p>Telefone</p>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5598987222769" target="_blank">
+              <p>(98) 98722-2769</p>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/djuniordev/" target="_blank">
+              <div class="box">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/djuniordev/" target="_blank">
+              <p>Linkedin</p>
+            </a>
+            <a href="https://www.linkedin.com/in/djuniordev/" target="_blank">
+              <p>@djuniordev</p>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://github.com/djuniordev" target="_blank">
+              <div class="box">
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </a>
+            <a href="https://github.com/djuniordev" target="_blank">
+              <p>Github</p>
+            </a>
+            <a href="https://github.com/djuniordev" target="_blank">
+              <p>@djuniordev</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="menuOpen hidden">
+    <h2>Menu</h2>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contacts">Contatos</a>
+    </nav>
+  </div>
+</body>
+</html>
