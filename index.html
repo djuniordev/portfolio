@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
   <script defer src="scripts/index.js" type="module"></script>
   <script defer src="scripts/renderData.js"></script>
+  
 </head>
 <body>
   <header>
     <div class="container">
+      <a href="#sobre">Portfolio<span>{}</span></a>
       <div class="menu">  
         <i class="ri-menu-line"></i>
         <i class="ri-close-line hidden"></i>
       </div>
-      <a href="#sobre">Portfólio<span>{}</span></a>
-      <div class="toggle">
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label for="checkbox" class="label">
-          <div class="box"></div>
-        </label>
+      <div class="itens-menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contacts">Contatos</a>
       </div>
     </div>
   </header>
@@ -67,7 +68,6 @@
     <div class="container">
       <h2>Projetos</h2>
       <div class="highlights">
-        <h3>Em destaque</h3>
         <div class="cards-projects"></div>
       </div>
     </div>

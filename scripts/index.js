@@ -1,12 +1,4 @@
-const initLightMode = () => {
-    document.querySelector('input[type="checkbox"]').addEventListener('change', () => {
-      document.body.classList.toggle('light-mode')
-    })
-  
-  }
-  
-  
-  const initAnimationScroll = () => {
+const initAnimationScroll = () => {
     const sections = document.querySelectorAll('.js-section')
   
     const windowHalfSize = window.innerHeight * 0.6
@@ -30,9 +22,9 @@ const initLightMode = () => {
     animateScroll()
     window.addEventListener('scroll', animateScroll)
   
-  }
+}
   
-  const initScrollSmooth = () => {
+const initScrollSmooth = () => {
   
     const linksInternos = document.querySelectorAll('nav a')
   
@@ -48,10 +40,8 @@ const initLightMode = () => {
       }
       item.addEventListener('click', scrollToSection)
     })
-  }
+}
   
 initAnimationScroll()
 initScrollSmooth()
-initLightMode()
-
   

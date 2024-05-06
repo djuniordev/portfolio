@@ -16,6 +16,8 @@
 }
 
 
+
+
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block
 }
@@ -140,8 +142,36 @@ a {
     font-size: 1.6rem
 }
 
+.itens-menu{
+    display: flex;
+    gap: 60px;
+}
+
+header .container .itens-menu a{
+    font-size: 2rem;
+    font-family: "DM Sans", "sans serif";
+    font-weight: 200;
+}
+
+header .container .itens-menu a:hover{
+    color: var(--cor-primaria);
+}
+
 .hidden {
     display: none !important
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .menu {
+        display: block;
+    }
+    .itens-menu {
+        display: none;
+    }
 }
 
 .container {
@@ -687,7 +717,8 @@ section#projects .container h2 {
     font-size: 3.2rem;
     color: var(--cor-primaria);
     font-weight: 600;
-    text-align: center
+    text-align: center;
+    margin-bottom: 10rem;
 }
 
 section#projects .container h3 {
@@ -933,131 +964,4 @@ body.transparent::after {
     position: absolute;
     z-index: 0;
     animation: fade 1s
-}
-
-body.light-mode {
-    background-color: var(--cor-quartenaria)
-}
-
-body.light-mode header {
-    background-color: var(--cor-quintenaria)
-}
-
-body.light-mode header h2 {
-    color: var(--cor-quartenaria) !important
-}
-
-body.light-mode header .container .menu i {
-    color: var(--cor-quartenaria)
-}
-
-body.light-mode .banner h1 {
-    color: var(--cor-terciaria) !important
-}
-
-body.light-mode .banner span {
-    color: var(--cor-terciaria) !important
-}
-
-body.light-mode .banner p {
-    color: var(--cor-quintenaria) !important
-}
-
-body.light-mode .banner .intro .actions a{
-    color: var(--cor-quintenaria) !important
-}
-
-body.light-mode .banner .intro .actions a{
-    border: 0.1rem solid var(--cor-quintenaria) !important
-}
-body.light-mode .banner .intro .actions a:hover {
-    background-color: var(--cor-quintenaria) !important
-}
-body.light-mode .banner .intro .actions a:hover {
-    color: var(--cor-quartenaria) !important
-}
-
-body.light-mode h2,body.light-mode h3 {
-    color: var(--cor-terciaria) !important
-}
-
-body.light-mode .contacts p {
-    color: var(--cor-terciaria) !important
-}
-
-body.light-mode .modal h2 {
-    color: var(--cor-primaria) !important
-}
-
-body.light-mode .about p {
-    color: var(--cor-quintenaria) !important
-}
-
-body.light-mode .menuOpen h2 {
-    color: var(--cor-quintenaria) !important
-}
-
-body.light-mode section#skills .skills .container .cards .box {
-    position: relative;
-    text-align: center;
-    background-color:   transparent;
-    border: 3px solid var(--cor-quintenaria);
-    width: 12rem;
-    aspect-ratio: 1;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-body.light-mode .box {
-    font-size: 40px;
-    color: var(--cor-quintenaria);
-}
-
-
-body.light-mode section#skills .skills .container .cards .box p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--cor-quintenaria);
-    margin-bottom: 1.5rem;
-}
-
-body.light-mode section#skills .skills .container .cards .box::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 0.3rem;
-    bottom: -0.1rem;
-    left: 0;
-}
-
-body.light-mode .menuOpen nav a:hover {
-    color: var(--cor-quintenaria);
-    transform: scale(1.4)
-}
-
-body.light-mode section#projects .container h3::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 75%;
-    height: 0.3rem;
-    border-radius: 2rem;
-    margin-top: 0.8rem;
-    background-image: linear-gradient(90deg, var(--cor-quintenaria) 0%, var(--cor-quintenaria) 92.32%);
-}
-
-body.light-mode header .container .menu i:hover {
-    background-color: var(--cor-quartenaria);
-    color: var(--cor-quintenaria);
-}
-
-body.light-mode .contacts .icons .icon i {
-    color: var(--cor-quintenaria);
 }
